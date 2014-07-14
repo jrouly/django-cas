@@ -38,6 +38,11 @@ Add these to ``settings.py`` to use the CAS Backend::
     CAS_LOGOUT_COMPLETELY = True
     CAS_PROVIDE_URL_TO_LOGOUT = True
 
+    AUTHENTICATION_BACKENDS = (
+        'cas.backends.CASBackend',
+        ...
+    )
+
 # Additional Features
 
 This fork contains additional features not found in the original:
